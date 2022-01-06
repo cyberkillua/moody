@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #000000; // background color
+  --primary-text-color: #FFFFFF; // main text color
+  --secondary-color: #e2e1f3; // second background color
+  --secondary-text-color: #3513ad; //second text color
+  --gray-light: #8e8ba2; //gray text color
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color)
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include medium-screen {
+    font-size: 50%;
+  }
+  @include small-screen {
+    font-size: 40%;
+  }
+}

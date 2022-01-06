@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #000000;
+  --primary-text-color: #FFFFFF;
+  --secondary-color: #e2e1f3;
+  --secondary-text-color: #3513ad;
+  --gray-light: #8e8ba2;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 49em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/HelveticaMedExt.ttf");
+}
+
+body {
+  font-family: "helvetica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.landing-page_body {
+  width: 60%;
+  height: 300px;
+  background-image: url("../assets/starsBg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.css.map */

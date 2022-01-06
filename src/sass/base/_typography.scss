@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/HelveticaMedExt.ttf");
+}
+
+body {
+  font-family: "helvetica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  line-height: 2;
+  font-size: 1.6rem;
+}
