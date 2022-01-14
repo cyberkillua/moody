@@ -2,11 +2,21 @@ import React, { FunctionComponent, useEffect } from "react";
 import Logo from "../assets/Moody.svg";
 import btn from "../assets/btn.svg";
 import Anime, { anime } from "react-anime";
+import { Link } from "react-router-dom";
+import { gsap } from "gsap";
 
 interface LandingPageProps {}
 
 type m14 = any;
 const LandingPage: FunctionComponent<LandingPageProps> = () => {
+  const nextPage = () => {
+    // gsap.from(".landing-page_body", {
+    //   duration: 1,
+    //   x: -100,
+    //   ease: "bounce",
+    // });
+  };
+
   var ml4: m14 = {};
   ml4.opacityIn = [0, 1];
   ml4.scaleIn = [0.2, 1];
@@ -95,7 +105,8 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
         delay: 500,
       });
   });
-
+  const d = new Date();
+  let year = d.getFullYear();
   return (
     <div className="landing-page">
       <header>
@@ -111,12 +122,14 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
             <span className="letters letters-5">You!</span>
           </h1>
         </div>
-        <div className="btn-container">
-          <button className="btn">
+
+        <Link to="/pick-playlist">
+          <button className="btn" onClick={nextPage}>
             <img src={btn} alt="button" />
           </button>
-        </div>
+        </Link>
       </main>
+      <footer className="footer">C Moody - {year} by Killua & Abdy</footer>
     </div>
   );
 };
