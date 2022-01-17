@@ -1,13 +1,9 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
-interface PickPlaylistProps {}
-
-const PickPlaylist: FunctionComponent<PickPlaylistProps> = () => {
+export default function PickPlaylist() {
   return (
     <div>
-        <h1>Pick Playlist</h1>
+      <h1>lezzzzzz go </h1>
     </div>
-  )
-};
-
-export default PickPlaylist;
+  );
+}

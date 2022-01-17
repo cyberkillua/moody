@@ -1,11 +1,11 @@
 .landing-page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   header {
     height: 20vh;
     padding-left: 6rem;
-    padding-top: 3rem;
     @include small-screen {
       padding-left: 1rem;
     }
@@ -52,26 +52,13 @@
   }
 }
 
-.ml4 {
-  position: relative;
-  font-weight: 500;
-  font-size: 5.5rem;
-}
-.ml4 .letters {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0.3em;
-  right: 0;
-  opacity: 0;
-}
 
 .footer {
   font-size: 1.8rem;
   color: #959595;
   text-align: center;
   font-weight: 500;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
