@@ -1,9 +1,10 @@
 import React, { FunctionComponent, useEffect } from "react";
-import Logo from "../assets/Moody.svg";
+
 import btn from "../assets/btn.svg";
 import { textAnimation } from "../animation/textAnimation";
 
 import { Link } from "react-router-dom";
+import Header from "../Component/Header";
 
 interface LandingPageProps {}
 
@@ -15,9 +16,7 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
   let year = d.getFullYear();
   return (
     <div className="landing-page">
-      <header>
-        <img src={Logo} alt="Moody" />
-      </header>
+      <Header />
       <main className="landing-page_body">
         <div className="text">
           <h1 className="ml4">

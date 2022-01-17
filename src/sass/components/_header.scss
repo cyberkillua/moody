@@ -1,0 +1,7 @@
+header {
+  height: 15vh;
+  padding-left: 6rem;
+  @include small-screen {
+    padding-left: 1rem;
+  }
+}

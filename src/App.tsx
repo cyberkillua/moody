@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import LandingPage from "./Component/LandingPage";
-import PickPlaylist from "./Component/PickPlaylist";
+import LandingPage from "./Pages/LandingPage";
+import PickPlaylist from "./Pages/PickPlaylist";
 import { CSSTransition } from "react-transition-group";
 import { gsap } from "gsap";
 

@@ -2,14 +2,9 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 
-  header {
-    height: 20vh;
-    padding-left: 6rem;
-    @include small-screen {
-      padding-left: 1rem;
-    }
-  }
+  
 }
 
 .landing-page_body {
@@ -31,6 +26,8 @@
     background-image: url("../assets/bgMobile.svg");
     width: 100%;
     justify-content: flex-start;
+    background-size: initial;
+    background-position: initial;
   }
   .text {
     width: 100%;
@@ -45,13 +42,13 @@
   .btn {
     background-color: transparent;
     border: none;
-    cursor: pointer;
+
     img {
       // height: 7rem;
+      cursor: pointer;
     }
   }
 }
-
 
 .footer {
   font-size: 1.8rem;

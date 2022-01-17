@@ -46,6 +46,17 @@ body {
   font-size: 1.6rem;
 }
 
+header {
+  height: 15vh;
+  padding-left: 6rem;
+}
+
+@media (max-width: 49em) {
+  header {
+    padding-left: 1rem;
+  }
+}
+
 .ml4 {
   position: relative;
   font-weight: 500;
@@ -110,17 +121,6 @@ body {
   height: 100vh;
 }
 
-.landing-page header {
-  height: 20vh;
-  padding-left: 6rem;
-}
-
-@media (max-width: 49em) {
-  .landing-page header {
-    padding-left: 1rem;
-  }
-}
-
 .landing-page_body {
   width: 60%;
   height: 60vh;
@@ -155,6 +155,8 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    background-size: initial;
+    background-position: initial;
   }
 }
 
@@ -174,6 +176,9 @@ body {
 .landing-page_body .btn {
   background-color: transparent;
   border: none;
+}
+
+.landing-page_body .btn img {
   cursor: pointer;
 }
 
@@ -192,5 +197,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.6rem;
 }
 /*# sourceMappingURL=index.css.map */
