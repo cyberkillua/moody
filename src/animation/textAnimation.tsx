@@ -1,4 +1,4 @@
-import Anime, { anime } from "react-anime";
+import { anime } from "react-anime";
 
 type m14 = any;
 export const textAnimation = () => {
