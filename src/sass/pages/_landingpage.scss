@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
 }
 
 .landing-page_body {
@@ -32,8 +31,11 @@
     height: 40%;
     text-align: center;
     padding-top: 5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     @include small-screen {
       height: 20%;
+      // overflow-x: hidden;
     }
   }
 

@@ -18,7 +18,6 @@ body {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 @media (max-width: 64em) {
@@ -136,7 +135,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  width: 100vw;
 }
 
 .landing-page_body {
@@ -183,6 +181,8 @@ header {
   height: 40%;
   text-align: center;
   padding-top: 5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media (max-width: 49em) {
