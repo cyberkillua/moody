@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
-
-  
+  width: 100vw;
 }
 
 .landing-page_body {
@@ -48,15 +46,4 @@
       cursor: pointer;
     }
   }
-}
-
-.footer {
-  font-size: 1.8rem;
-  color: #959595;
-  text-align: center;
-  font-weight: 500;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

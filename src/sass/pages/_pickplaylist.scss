@@ -1,9 +1,14 @@
-.container {
-
-    &-header{
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 500;
-        line-height: 3.6rem;
+.pick-playlist-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .container {
+    flex-grow: 1;
+    &-header {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 3.6rem;
     }
+  }
 }

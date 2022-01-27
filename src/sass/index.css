@@ -53,8 +53,31 @@ header {
 
 @media (max-width: 49em) {
   header {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
+}
+
+@media (max-width: 49em) {
+  header img {
+    height: 12rem;
+  }
+}
+
+.footer {
+  font-size: 1.8rem;
+  color: #959595;
+  text-align: center;
+  font-weight: 500;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ml4 {
@@ -70,12 +93,6 @@ header {
   top: 0.3em;
   right: 0;
   opacity: 0;
-}
-
-.page {
-  position: absolute;
-  left: 15px;
-  right: 15px;
 }
 
 .page-enter {
@@ -119,6 +136,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+  width: 100vw;
 }
 
 .landing-page_body {
@@ -182,24 +200,24 @@ header {
   cursor: pointer;
 }
 
-.footer {
-  font-size: 1.8rem;
-  color: #959595;
-  text-align: center;
-  font-weight: 500;
-  height: 10vh;
+.pick-playlist-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
-.container-header {
+.pick-playlist-container .container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pick-playlist-container .container-header {
   text-align: center;
   font-size: 3rem;
   font-weight: 500;

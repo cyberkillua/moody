@@ -5,6 +5,7 @@ import { textAnimation } from "../animation/textAnimation";
 
 import { Link } from "react-router-dom";
 import Header from "../Component/Header";
+import Footer from "../Component/Footer";
 
 interface LandingPageProps {}
 
@@ -12,8 +13,7 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
   useEffect(() => {
     textAnimation();
   });
-  const d = new Date();
-  let year = d.getFullYear();
+
   return (
     <div className="landing-page">
       <Header />
@@ -34,7 +34,7 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
           </button>
         </Link>
       </main>
-      <footer className="footer">C Moody - {year} by Killua & Abdy</footer>
+      <Footer />
     </div>
   );
 };
