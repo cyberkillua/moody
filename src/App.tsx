@@ -7,24 +7,22 @@ import { gsap } from "gsap";
 
 function App() {
   const onEnter = (node: any) => {
-    gsap.from([node.children[0]], 0.3, {
+    console.log(node);
+    gsap.from([node.children[0]], 0.6, {
       x: 300,
       delay: 0.2,
       ease: "Power3.easeOut",
       opacity: 0,
-      stagger: {
-        amount: 0.2,
-      },
     });
   };
 
   const onExit = (node: any) => {
-    gsap.to([node.children[0]], 0.3, {
+    console.log(node);
+    gsap.to([node.children[0]], 0.6, {
       x: -300,
+      opacity: 0,
+      delay: 0.2,
       ease: "Power3.easeOut",
-      stagger: {
-        amount: 0.2,
-      },
     });
   };
 
@@ -40,7 +38,7 @@ function App() {
           {({ match }: match) => (
             <CSSTransition
               in={match != null}
-              timeout={1200}
+              timeout={600}
               classNames="page"
               onExit={onExit}
               onEntering={onEnter}

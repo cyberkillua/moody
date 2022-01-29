@@ -38,7 +38,7 @@
   }
   
   .page-exit-active {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms;
   }
